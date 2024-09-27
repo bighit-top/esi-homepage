@@ -32,7 +32,7 @@ import { AuthGuard } from '@nestjs/passport';
 import { SkipAuthGuard } from 'src/auth/skip-auth.guard';
 import { AuthMetaData } from 'src/auth/auth-metadata.decorator';
 
-@Controller('inspectionhistories')
+@Controller('api/inspectionhistories')
 // @UseGuards(AuthGuard())
 export class InspectionHistoryController {
   constructor(

@@ -21,7 +21,7 @@ import { AuthCredentialDto } from './auth-credential.dto';
 import { AuthGuard } from '@nestjs/passport';
 import { Request, Response } from 'express';
 
-@Controller('auth')
+@Controller('api/auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
 

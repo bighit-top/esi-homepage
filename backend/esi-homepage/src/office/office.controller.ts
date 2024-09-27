@@ -4,7 +4,7 @@ import { Office } from './office.entity';
 
 import { ApiOkResponse } from '@nestjs/swagger';
 
-@Controller('office')
+@Controller('api/office')
 export class OfficeController {
   constructor(private officeService: OfficeService) {}
 
