@@ -11,11 +11,6 @@ import { InspectionHistoryPage } from './layouts/InspectionHistoryPage/Inspectio
 import { InspectionHistoryCreatePage } from './layouts/InspectionHistoryPage/InspectionHistoryCreatePage';
 import { InspectionHistoryUpdatePage } from './layouts/InspectionHistoryPage/InspectionHistoryUpdatePage';
 import { InspectionHistoryDetailPage } from './layouts/InspectionHistoryPage/InspectionHistoryDetailPage';
-import { InspectionInquiryPage } from './layouts/InspectionInquiryPage/InspectionInquiryPage';
-import { InspectionInquiryUpdatePage } from './layouts/InspectionInquiryPage/InspectionInquiryUpdatePage';
-import { InspectionInquiryCreatePage } from './layouts/InspectionInquiryPage/InspectionInquiryCreatePage';
-import { InspectionInquiryDetailPage } from './layouts/InspectionInquiryPage/InspectionInquiryDetailPage';
-
 
 function App() {
 
