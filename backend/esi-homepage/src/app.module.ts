@@ -3,14 +3,11 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { typeORMConfig } from './configs/typeorm.config';
-import { InspectionInquiriesModule } from './inspectionrinquiry/inspection-Inquiries.module';
 import { InspectionHistoriesModule } from './inspectionhistory/inspection-histories.module';
 import { Office } from './office/office.entity';
 import { ImageFileModule } from './imagefile/image-file.module';
-import { CommentsModule } from './comment/comments.module';
 import { OfficeModule } from './office/office.module';
 import { AuthModule } from './auth/auth.module';
-import { SkipAuthGuard } from './auth/skip-auth.guard';
 
 @Module({
   imports: [
@@ -18,8 +15,6 @@ import { SkipAuthGuard } from './auth/skip-auth.guard';
     TypeOrmModule.forFeature([Office]),
     ImageFileModule,
     AuthModule,
-    CommentsModule,
-    InspectionInquiriesModule,
     InspectionHistoriesModule,
     OfficeModule,
     ServeStaticModule.forRoot({
