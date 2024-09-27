@@ -12,7 +12,6 @@ import {
 import { UserRole } from './user-role.enum';
 import { Office } from 'src/office/office.entity';
 import { InspectionHistory } from 'src/inspectionhistory/inspection-history.entity';
-import { Comment } from 'src/comment/comment.entity';
 
 @Entity()
 export class User extends BaseEntity {
@@ -46,7 +45,4 @@ export class User extends BaseEntity {
     (inspectionHistory) => inspectionHistory.user,
   )
   inspectionHistory: InspectionHistory[];
-
-  @OneToMany(() => Comment, (comment) => comment.user)
-  comment: Comment[];
 }
