@@ -27,7 +27,7 @@ export const ServiceMainDetailContent = () => {
                     </li>
                     <li>건축물 관리주체 「기계설비 유지관리기준」 이행사항
                         <table className="border-collapse border border-black size-3/4 text-center">
-                            <thead className="bg-sky-500">
+                            <thead className="bg-gray-300">
                                 <tr>
                                     <th className="border">구분</th>
                                     <th className="border">작성시가</th>
@@ -65,7 +65,7 @@ export const ServiceMainDetailContent = () => {
                     </li>
                     <li>기계설비의 유지관리자 선임 및 성능점검 기준일
                         <table className="border-collapse border border-black size-3/4 text-center">
-                            <thead className="bg-sky-500">
+                            <thead className="bg-gray-300">
                                 <tr>
                                     <th className="border">기계설비 유지관리자 선임대상 건축물 등</th>
                                     <th className="border">선임자격</th>
@@ -74,6 +74,54 @@ export const ServiceMainDetailContent = () => {
                                 </tr>
                             </thead>
                             <tbody>
+                                <tr className="text-center">
+                                    <td className="border text-left">
+                                        &bull; 연면적 6만㎡이상 건축물<br />
+                                        &bull; 3천세대 이상 공동주택
+                                    </td>
+                                    <td className="border">특급/1명<br />보조/1명</td>
+                                    <td className="border">2명</td>
+                                    <td className="border">
+                                        {/* ~ 2024.04.17.<br />
+                                        국토부 고시 이후 추진 */}
+                                    </td>
+                                </tr>
+                                <tr className="text-center">
+                                    <td className="border text-left">
+                                        &bull; 연면적 3만㎡이상 6만㎡미만 건축물 <br />
+                                        &bull; 2천세대 이상 3천세대 미만 공동주택</td>
+                                    <td className="border">고급/1명<br />보조/1명</td>
+                                    <td className="border">2명</td>
+                                    <td className="border">
+                                        {/* ~ 2024.04.17.<br />
+                                        국토부 고시 이후 추진 */}
+                                    </td>
+                                </tr>
+                                <tr className="text-center">
+                                    <td className="border text-left">
+                                        &bull; 연면적 1만5천㎡ 이상 3만㎡미만 건축물<br />
+                                        &bull; 1천세대 이상 2천세대 미만 공동주택</td>
+                                    <td className="border">중급/1명</td>
+                                    <td className="border">1명</td>
+                                    <td className="border">
+                                        {/* ~ 2024.04.17.<br />
+                                        국토부 고시 이후 추진 */}
+                                    </td>
+                                </tr>
+                                <tr className="text-center">
+                                    <td className="border text-left">
+                                        &bull; 연면적 1만㎡ 이상 1만5천㎡ 미만 건축물<br />
+                                        &bull; 500세대 이상 1천세대 미만 공동주택<br />
+                                        &bull; 300세대 이상 500세대 미만 중앙집중식
+                                        (지역)난방방식 공동주택
+                                    </td>
+                                    <td className="border">초급/1명</td>
+                                    <td className="border">1명</td>
+                                    <td className="border">
+                                        {/* ~ 2024.04.17.<br />
+                                        국토부 고시 이후 추진 */}
+                                    </td>
+                                </tr>
                                 <tr className="text-center">
                                     <td className="border text-left">
                                         &bull; 학교시설사업 촉진법제2조에 따른 학교시설(1만m²미만)<br />

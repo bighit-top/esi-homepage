@@ -1,7 +1,6 @@
-import gear from "../../image/gears.jpg";
-import building from "../../image/building.png";
-import plumber from "../../image/plumber.png";
-import mechanics from "../../image/mechanics.png";
+import mainBuilding from "../../image/main_building.png";
+import pipe from "../../image/pipe.jpg";
+import pump from "../../image/pump.jpg";
 import { HistorySwiper } from "./components/HistorySwiper";
 
 export const MainPage = () => {
@@ -13,15 +12,15 @@ export const MainPage = () => {
                     <div className="">
                         <img
                             loading="lazy"
-                            src={gear}
-                            className="object-cover absolute size-fit"
+                            src={mainBuilding}
+                            className="object-cover w-full absolute size-fit"
                         />
                     </div>
                     <div className="mb-20 max-md:mb-0 max-lg:mb-0">
-                        <div className="flex relative flex-col px-20 py-20 mt-32 bg-blue-800 bg-opacity-50 max-lg:mt-5">
+                        <div className="flex relative flex-col px-20 py-20 mt-32 bg-blue-900 bg-opacity-70 max-lg:mt-5">
                             <div className="text-5xl font-semibold max-md:text-lg max-lg:text-2xl max-xl:text-3xl max-2xl:text-4xl leading-normal max-md:-mt-10">
-                                우리 <span className="text-white font-black">ESI 기계설비</span>는 최 강의 기술진이 최고의 서비스로 <br />
-                                <p>기계설비의 유지관리 및 위탁선임 고민을 해결해드립니다.</p>
+                                우리 <span className="text-white font-black">ESI 기계설비</span>는 최강의 기술진이 최고의 서비스로 <br />
+                                <p>기계설비의 유지관리 고민을 해결해드립니다.</p>
                             </div>
                             <div className="mt-5 text-3xl max-md:text-sm max-lg:text-lg max-xl:text-xl max-lg:mt-2">
                                 건물에 점검/관리가 필요한 곳이라면 어디든 찾아가겠습니다.
@@ -55,38 +54,39 @@ export const MainPage = () => {
                 </div>
             </div>
 
-            <div className="flex justify-center items-center px-16 py-5 bg-blue-800 bg-opacity-10 max-md:px-5">
-                <div className="w-full max-w-[1040px] max-md:max-w-full">
+            <div className="flex justify-center items-center px-16 py-5 bg-gray-100 max-md:px-5">
+                <div className="w-full max-w-[1280px] max-md:max-w-full">
                     <div className="flex items-center gap-5 max-md:flex-col max-md:gap-0">
-                        <div className="flex flex-col ml-5 w-[30%] max-md:w-1/2">
+                        <div className="flex flex-col w-[50%] max-md:w-full"> {/* 이미지 부분 */}
                             <img
                                 loading="lazy"
-                                src={mechanics}
-                                className="mt-9 w-full aspect-square max-md:mt-10"
+                                src={pump}
+                                className="mt-5 w-full h-auto object-cover max-md:mt-10"
                             />
                         </div>
-                        <div className="flex flex-col items-center w-[58%] mx-16 max-md:w-full ">
+                        <div className="flex flex-col items-center mx-10 w-[50%] max-md:w-full"> {/* 텍스트 부분 */}
                             <div className="text-2xl font-[1000] leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-lg">
                                 <p className="font-extrabold mb-5 text-3xl">
                                     성능점검
                                 </p>
                                 <p>
-                                    건축물의 핵심, 성능을 철저하게 점검합니다. 안전과 효율성을 위해 성능점검 서비스를
-                                    통해 건물의 잠재적인 문제점을 발견하고 해결책을 제시합니다.
+                                    기계설비 성능점검은 건축물의 안전성과 효율성을 확보하기 위해 필수적인 과정입니다.
+                                    체계적인 계획 수립 후 점검을 실시하고, 수집된 데이터를 분석하여 성능 개선을 위한 제안을 제시합니다.
+                                    최종적으로 작성된 보고서를 관련 당사자에게 제출하여 향후 관리에 활용합니다.
+                                    이를 통해 기계설비의 최적 상태를 유지하며 안전하고 효율적인 운영을 지원합니다.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div className="flex justify-center items-center px-16 py-5 max-md:px-5">
-                <div className="w-full max-w-[1040px] max-md:max-w-full">
+                <div className="w-full max-w-[1280px] max-md:max-w-full">
                     <div className="flex items-center gap-5 max-md:flex-col-reverse max-md:gap-0">
-                        <div className="flex flex-col items-center w-[58%] max-md:w-full">
+                        <div className="flex flex-col items-center w-[50%] max-md:w-full"> {/* 텍스트 부분 */}
                             <div className="text-2xl text-black font-[1000] leading-[50px] max-md:mt-10 max-md:max-w-full max-md:text-lg">
                                 <p className="font-extrabold mb-5 text-3xl">
-                                    유지관리점검
+                                    유지관리
                                 </p>
                                 <p>
                                     건축물을 지속적으로 관리하여 최상의 상태를 유지합니다. 유지관리점검 서비스를 통해 정기적인 점검과 보수를
@@ -94,18 +94,19 @@ export const MainPage = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex flex-col ml-3 w-[30%] max-md:ml-0 max-md:w-1/2">
+                        <div className="flex flex-col ml-3 w-[50%] max-md:ml-0 max-md:w-full"> {/* 이미지 부분 */}
                             <img
                                 loading="lazy"
-                                src={building}
-                                className="mt-9 w-full aspect-square max-md:mt-10"
+                                src={pipe}
+                                className="mt-9 w-full h-auto object-cover max-md:mt-10" // object-cover 추가
                             />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="flex justify-center items-center px-16 py-5 bg-blue-800 bg-opacity-10 max-md:px-5">
+
+            {/* <div className="flex justify-center items-center px-16 py-5 bg-blue-800 bg-opacity-10 max-md:px-5">
                 <div className="w-full max-w-[1040px] max-md:max-w-full">
                     <div className="flex items-center gap-5 max-md:flex-col max-md:gap-0">
                         <div className="flex flex-col ml-5 w-[30%] max-md:w-1/2">
@@ -128,7 +129,7 @@ export const MainPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }

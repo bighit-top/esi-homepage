@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { HistoryAndImageModel } from "../../../models/HistoryAndImageModel";
-import { Pagination, FreeMode } from 'swiper/modules';
+import { Pagination, FreeMode, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/less';
@@ -49,22 +49,24 @@ export const HistorySwiper = () => {
 
     return (
         <Swiper
-            modules={[FreeMode, Pagination]}
+            modules={[FreeMode, Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={2}
             freeMode={true}
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
             pagination={{
                 clickable: true,
             }}
             breakpoints={{
                 768: {
-                    slidesPerView: 4,  //브라우저가 768보다 클 때
+                    slidesPerView: 4,
                     spaceBetween: 40,
-                    freeMode: true,
-                    pagination: { clickable: true },
                 },
                 1024: {
-                    slidesPerView: 6,  //브라우저가 1024보다 클 때
+                    slidesPerView: 6,
                     spaceBetween: 50,
                 },
             }}
@@ -72,7 +74,7 @@ export const HistorySwiper = () => {
             <div className="flex flex-row justify-center">
                 {histories.map(history => (
                     <SwiperSlide key={history.id}>
-                        <div key={history.id} className="flex flex-col max-md:w-full">
+                        <div className="flex flex-col max-md:w-full">
                             <div className="flex flex-grow items-center justify-center bg-blue-800 bg-opacity-10 max-md:px-5">
                                 <img
                                     loading="lazy"

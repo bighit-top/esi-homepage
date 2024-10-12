@@ -64,7 +64,7 @@ export const LoginPage = () => {
                             <input type="text" id="id" placeholder="ID" />
                         </div>
                         <div className="justify-center items-start pr-16 pl-4 mt-5 font-semibold bg-white rounded border-2 border-solid border-[color:var(--Light-Grey,#BBC8D4)]">
-                            <input type="text" id="password" placeholder="Password" />
+                            <input type="password" id="password" placeholder="Password" />
                         </div>
                         <div className="justify-center self-center px-10 mt-7 text-xl text-white bg-blue-800 rounded-2xl border border-blue-800 border-solid leading-[40px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">
                             <button onClick={() => onLogin()}>Login</button>
